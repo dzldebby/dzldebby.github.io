@@ -6,4 +6,4 @@ Hello world
 - Heading 2 
 
 
-{% post_url data.md %}
+URL {% post_url data.md %}
