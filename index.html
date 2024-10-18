@@ -764,28 +764,6 @@
   <script src="../assets/js/main.js"></script>
   <script src="../assets/js/error-handling.js"></script>
   <script src="../assets/js/offcanvas.js"></script>
-
-
-  <script>
-    // Save the original initCursor function
-    var originalInitCursor = window.initCursor;
-
-    // Override the initCursor function
-    window.initCursor = function() {
-        if (!isMobileDevice()) {
-            // Only initialize the cursor on non-mobile devices
-            if (typeof originalInitCursor === 'function') {
-                originalInitCursor();
-            }
-        }
-    };
-
-    function isMobileDevice() {
-        return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) 
-            || (window.matchMedia && window.matchMedia("(max-width: 768px)").matches);
-    }
-  </script>
-
   <script src="../assets/js/wc-cursor-copy.js"></script>
 
 

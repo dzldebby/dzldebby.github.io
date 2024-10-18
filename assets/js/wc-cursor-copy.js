@@ -3,22 +3,27 @@ function isMobileDevice() {
       || (window.matchMedia && window.matchMedia("(max-width: 768px)").matches);
 }
 
-if (!isMobileDevice()) {
-  // We'll load the original wc-cursor.js content here
-}
+// Load the original wc-cursor.js content
+const script = document.createElement('script');
+script.src = '../assets/js/wc-cursor.js'; // Adjust this path as needed
+document.head.appendChild(script);
 
-window.addEventListener('resize', function() {
+// Function to handle cursor visibility
+function handleCursorVisibility() {
   const cursorElements = document.querySelectorAll('.cursor1, .cursor2');
   cursorElements.forEach(el => {
       if (el) {
-          el.style.display = isMobileDevice() ? 'none' : '';
+          if (isMobileDevice()) {
+              el.style.display = 'none';
+          } else {
+              el.style.display = '';
+          }
       }
   });
-});
-
-// Load the original wc-cursor.js content
-if (!isMobileDevice()) {
-  const script = document.createElement('script');
-  script.src = 'wc-cursor.js';
-  document.head.appendChild(script);
 }
+
+// Initial check
+handleCursorVisibility();
+
+// Check on resize
+window.addEventListener('resize', handleCursorVisibility);
