@@ -1,0 +1,172 @@
+/* CUSTOM */
+
+.experience__grid::after {
+  background-image: none !important;
+}
+
+
+.writer-award__content {
+  grid-template-columns: 1fr;
+}
+
+
+.experience__grid {
+  grid-template-columns: 1fr;
+}
+
+.experience__item:nth-child(even) {
+  margin-inline-start: inherit;
+}
+
+.writer-award__area {
+  background-color:var(--white-3)
+}
+
+.experience__item {
+  padding: 15px;
+}
+
+.developer-resume__tab-menu {
+  font-family:"Prata", serif;
+  /* "euclid_Circular_B" */
+  /* "Prata", serif */
+}
+
+
+/* .anim-reveal-line {
+  text-align: left !important;
+} */
+
+ul.developer-resume-ul {
+  margin-left: 0px;
+}
+
+
+h3#resume-text {
+  text-align-last: start;
+}
+
+h3.exp-title, h4.company, h2.exp-time {
+  font-family:'euclid_Circular_B'
+}
+
+.swiper-slide.swiper-slide-active, .swiper-slide.swiper-slide-duplicate.swiper-slide-active, .swiper-slide.swiper-slide-next, .swiper-slide{
+  margin-right: 20px !important;
+  width: 294px !important;
+}
+
+.writer-award__area {
+
+  background-color: white;
+}
+
+/* .light .pdesigner-resume__area {
+  background-color: var(--blue-2) !important;
+} */
+
+h3.award__title, h4.award__status, h2.award__date {
+  font-family:'euclid_Circular_B'
+}
+
+
+section.writer-featured__area.pt-20 {
+  background-color: white;
+}
+/* 
+div {
+  color: var(--blue-1) !important;
+} */
+
+.tg-guide__area.tg-pt-80.pb-180 {
+  /* background-color: white; */
+  /* background:  linear-gradient(0deg, #E2EEFE 0%, #E0EDFF 0.01%, rgba(226, 238, 254, 0) 100%); */
+  background-color: var(--white);
+
+}
+
+
+.light .writer-award__title span {
+  background-color: var(--blue-1) !important;
+
+}
+
+
+.light .text_invert > div {
+  background-image: linear-gradient(to right, var(--blue-1) 50%, rgba(66, 60, 60, 0.5) 50%)
+}
+
+
+.writer-award__content p {
+  font-size: 22px;
+}
+
+.light .pdesigner-resume__area {
+  background:  linear-gradient(0deg, #E2EEFE 0%, #E0EDFF 0.01%, rgba(226, 238, 254, 0) 100%);
+  background-color: var(--white);
+}
+
+
+.developer-resume__tab-menu ul li a.active {
+  background-color: #2470c2;
+}
+
+.light .developer-resume__tab-menu ul {
+  background-color: var(--blue-1);
+}
+
+.light .developer-resume__tab-menu ul li a {
+  color: var(--white-3);
+
+}
+
+.developer-resume__tab-menu ul li a::before {
+  background: #2470c2;
+}
+
+.light .experience__item .exp-title {
+  color: var(--blue-1);
+}
+
+section.tg-place__area.pb-160.pt-60 {
+  background:  linear-gradient(180deg, #E2EEFE 0%, #E0EDFF 0.01%, rgba(226, 238, 254, 0) 100%);
+  background-color: var(--white);
+}
+
+.light h1, .light h2, .light h3, .light h4, .light h5, .light h6 {
+  color: var(--blue-1);
+
+  
+}
+
+
+.line-col-3 {
+  display: none;
+}
+
+img#header-logo {
+  max-height:700px;
+}
+
+
+.writer-inab__hero-scroll-btn {
+  margin-top:40px;
+  margin-left:0px;
+}
+
+.light .writer-award__content p span {
+  color: var(--blue-1);
+  }
+
+/* CUSTOM END */
+
+
+.dir-rtl .swiper-slide {
+  direction: rtl;
+}
+
+
+/* Test Purpose */
+.offcanvas-area {
+  opacity: 0;
+  visibility: hidden;
+}
