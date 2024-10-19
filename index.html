@@ -30,6 +30,64 @@
 
 <body class="font-heading-romanstory light">
 
+          <!-- Header area start -->
+          <header id="main-header"  class="header__area bg-transparent plr-100 fixed-header">
+            <div class="header__inner menu-right">
+              <div class="header__logo">
+                <a href="index.html">
+                  <img src="../assets/imgs/debby-logo.png" alt="Logo" id="header-logo">
+                </a>
+              </div>
+              <div class="header__nav tg-header__nav">
+                <nav class="main-menu menu-dark">
+                  <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li class="menu-item-has-children"><a href="#">Pages</a>
+                      <ul class="dp-menu">
+                        <li><a href="index.html">home dark</a></li>
+                        <li><a href="index-light.html">home light</a></li>
+                        <li><a href="service.html">service dark</a></li>
+                        <li><a href="service-light.html">service light</a></li>
+                        <li><a href="about.html">about dark</a></li>
+                        <li><a href="about-light.html">about light</a></li>
+                        <li><a href="blog.html">blog dark</a></li>
+                        <li><a href="blog-light.html">blog light</a></li>
+                        <li><a href="place.html">place dark</a></li>
+                        <li><a href="place-light.html">place light</a></li>
+                        <li><a href="place-details.html">place details dark</a></li>
+                        <li><a href="place-details-light.html">place details light</a></li>
+                        <li><a href="blog-details.html">blog details dark</a></li>
+                        <li><a href="blog-details-light.html">blog details light</a></li>
+                        <li><a href="contact.html">contact dark</a></li>
+                        <li><a href="contact-light.html">contact light</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="blog.html">blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="tg-header__navicon">
+                <div class="tg-header__search">
+                  <button type="button" class="search-icon" id="search_icon"><i
+                      class="fa-solid fa-magnifying-glass"></i></button>
+                  <button class="search-icon" id="search_close"><i class="fa-solid fa-xmark"></i></button>
+                  <div class="info-search__area tg-search">
+                    <form action="#">
+                      <input type="text" name="search" placeholder="Search keyword">
+                      <button type="submit" class="info-search__area-btn"><i
+                          class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                  </div>
+                </div>
+                <button onclick="showCanvas3()" class="open-offcanvas">
+                  <span class="menu-icon-2"><span></span></span> </button>
+              </div>
+            </div>
+          </header>
+          <!-- Header area end -->
+  
 
   <!-- Cursor Animation -->
   <div class="cursor1"></div>
@@ -59,6 +117,7 @@
       <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
     </svg>
   </div>
+
 
 
 
@@ -121,76 +180,12 @@
         <!-- overlay switcher close  -->
         <div class="overlay-switcher-close"></div>
 
-        <!-- Header area start -->
-        <header class="header__area bg-transparent pos-abs plr-100">
-          <div class="header__inner menu-right">
-            <div class="header__logo">
-              <a href="index.html">
-                <img src="../assets/imgs/debby-logo.png" alt="Logo" id="header-logo">
-              </a>
-            </div>
-            <div class="header__nav tg-header__nav">
-              <nav class="main-menu menu-dark">
-                <ul>
-                  <li><a href="index.html">home</a></li>
-                  <li><a href="about.html">about</a></li>
-                  <li class="menu-item-has-children"><a href="#">Pages</a>
-                    <ul class="dp-menu">
-                      <li><a href="index.html">home dark</a></li>
-                      <li><a href="index-light.html">home light</a></li>
-                      <li><a href="service.html">service dark</a></li>
-                      <li><a href="service-light.html">service light</a></li>
-                      <li><a href="about.html">about dark</a></li>
-                      <li><a href="about-light.html">about light</a></li>
-                      <li><a href="blog.html">blog dark</a></li>
-                      <li><a href="blog-light.html">blog light</a></li>
-                      <li><a href="place.html">place dark</a></li>
-                      <li><a href="place-light.html">place light</a></li>
-                      <li><a href="place-details.html">place details dark</a></li>
-                      <li><a href="place-details-light.html">place details light</a></li>
-                      <li><a href="blog-details.html">blog details dark</a></li>
-                      <li><a href="blog-details-light.html">blog details light</a></li>
-                      <li><a href="contact.html">contact dark</a></li>
-                      <li><a href="contact-light.html">contact light</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="blog.html">blog</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                </ul>
-              </nav>
-            </div>
-            <div class="tg-header__navicon">
-              <div class="tg-header__search">
-                <button type="button" class="search-icon" id="search_icon"><i
-                    class="fa-solid fa-magnifying-glass"></i></button>
-                <button class="search-icon" id="search_close"><i class="fa-solid fa-xmark"></i></button>
-                <div class="info-search__area tg-search">
-                  <form action="#">
-                    <input type="text" name="search" placeholder="Search keyword">
-                    <button type="submit" class="info-search__area-btn"><i
-                        class="fa-solid fa-magnifying-glass"></i></button>
-                  </form>
-                </div>
-              </div>
-              <select id="lang-default">
-                <option value="English">Eng</option>
-                <option value="Hindi">Hind</option>
-                <option value="Arabic">Ara</option>
-              </select>
-              <button onclick="showCanvas3()" class="open-offcanvas">
-                <span class="menu-icon-2"><span></span></span> </button>
-            </div>
-          </div>
-        </header>
-        <!-- Header area end -->
 
         <main>
 
           <!-- intro start  -->
           <section class="tg-intro__area">
-            <!-- <div class="tg-intro__area-bg-wrap">
-              <img src="../assets/imgs/travel-guide/intro-sky.png" alt="sky image">
-            </div> -->
+
             <div class="container">
               <div class="tg-intro__area-wrap">
                 <div class="tg-intro__area-title-wrap">
@@ -198,17 +193,6 @@
                     <p class="tg-intro__area-name">Award winning Analytics Consultant</p>
                   </div>
                   <h1 class="tg-intro__area-title">Debby <span class="space-end"></span>  <br> Ling </h1>
-                  <!-- <div class="tg-intro__area-latest-place">
-                    <img src="../assets/imgs/travel-guide/nature-image.jpg" alt="latest-place">
-                  </div> -->
-                  <!-- <div class="tg-intro__area-circle-wrap">
-                    <div class="btn-wrapper cf_btn_circle">
-                      <a href="https://www.youtube.com/watch?v=Whq9CgukZO0" class="circle-text btn-item video-popup">
-                        <img class="text" src="../assets/imgs/travel-guide/intro-rect-text.png" alt="Video">
-                        <img class="icon" src="../assets/imgs/travel-guide/intro-rect-arow.png" alt="Icon">
-                      </a>
-                    </div>
-                  </div> -->
                   <div class="shape-1 img_anim_reveal">
                     <img src="../assets/imgs/travel-guide/Analysis Digital Marketing.gif" alt="shape">
                   </div>
@@ -698,7 +682,7 @@
             <div class="row">
               <div class="col-xxl-12">
                 <div class="footer-sfluence__logo">
-                  <img src="../assets/imgs/debby-logo.png" alt="Footer Logo">
+                  <img src="../assets/imgs/logo-white.png" alt="Footer Logo">
                 </div>
 
                 <div class="footer-sfluence__top">
@@ -766,7 +750,48 @@
   <script src="../assets/js/offcanvas.js"></script>
   <script src="../assets/js/wc-cursor-copy.js"></script>
 
+  <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const header = document.getElementById('main-header');
+    const scrollThreshold = 100;
+    let lastScrollTop = 0;
 
+    // Create a div to detect hover at the top of the page
+    const hoverDetector = document.createElement('div');
+    hoverDetector.style.position = 'fixed';
+    hoverDetector.style.top = '0';
+    hoverDetector.style.left = '0';
+    hoverDetector.style.right = '0';
+    hoverDetector.style.height = '20px';
+    hoverDetector.style.zIndex = '9998'; // Just below the header
+    document.body.appendChild(hoverDetector);
+
+    window.addEventListener('scroll', function() {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+        if (scrollTop > lastScrollTop && scrollTop > scrollThreshold) {
+            // Scrolling down
+            header.classList.add('scrolled', 'header-hidden');
+        } else if (scrollTop <= scrollThreshold) {
+            // At the top
+            header.classList.remove('scrolled', 'header-hidden');
+        }
+        
+        lastScrollTop = scrollTop;
+    });
+
+    hoverDetector.addEventListener('mouseenter', function() {
+        header.classList.remove('header-hidden');
+    });
+
+    header.addEventListener('mouseleave', function() {
+        if (window.pageYOffset > scrollThreshold) {
+            header.classList.add('header-hidden');
+        }
+    });
+});    
+
+</script>
 </body>
 
 </html>

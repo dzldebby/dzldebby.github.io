@@ -157,6 +157,64 @@ img#header-logo {
   color: var(--blue-1);
   }
 
+
+  .fixed-header {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 9999 !important;
+    height: 80px !important; /* Adjust this value as needed */
+    transform: none !important;
+    transition: none !important;
+}
+
+body {
+    padding-top: 80px; /* Should match the height of your header */
+}
+
+
+.header__area {
+  transition: background-color 0.3s ease;
+}
+
+.header__area.scrolled {
+  background-color: var(--blue-2) !important; /* Adjust this to your preferred blue color */
+}
+
+.header__area {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.header__area.scrolled {
+  background-color: var(--blue-2) !important; /* Your preferred blue color */
+}
+
+.header__area.header-hidden {
+  transform: translateY(-100%) !important;
+}
+
+
+
+/* Optional: Adjust body padding to account for the header */
+body {
+  padding-top: 80px; /* Adjust to match your header height */
+  transition: padding-top 0.3s ease;
+}
+
+body.header-hidden {
+  padding-top: 0;
+}
+
+.light .footer-sfluence__logo img {
+  filter: brightness(1) !important;
+}
+
+
+.footer-sfluence__area {
+  background-color: var(--blue-1);
+}
+
 /* CUSTOM END */
 
 
