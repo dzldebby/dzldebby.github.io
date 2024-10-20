@@ -215,6 +215,58 @@ body.header-hidden {
   background-color: var(--blue-1);
 }
 
+
+.light .footer-sfluence__menu ul li a {
+  color: white;
+}
+
+h2#black-tg-place {
+  color:black !important;
+}
+
+
+a#black-tg-link {
+  color: black !important;
+  border: 1.5px solid black !important;
+}
+
+.fa-brands, .fab {
+  color: white;
+}
+
+a#black-text {
+  color: white;
+}
+
+p#black-text {
+  color: white;
+}
+
+.footer-sfluence__logo::after {
+  background-color: white;
+}
+
+.footer-sfluence__logo {
+  filter: brightness(100);
+}
+
+img.show-light {
+  max-width: 20%;
+}
+
+.experience__grid::before {
+  background-image: url(assets/imgs/linechart.png);
+}
+
+
+
+@media only screen and (max-width: 767px) {
+  h3.tg-sec-title.has_fade_anim, h2.tg-sec-title.has_fade_anim {
+    color: var(--blue-1) !important;
+    mix-blend-mode: normal;
+  }
+}
+
 /* CUSTOM END */
 
 
