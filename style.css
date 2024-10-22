@@ -278,6 +278,19 @@ img#resume-icon {
   padding-top: 30px;
 }
 
+
+.brand__logo img {
+  max-width: 150px;
+}
+
+/* Hide the shape on mobile devices */
+@media screen and (max-width: 767px) {
+  .shape-1.img_anim_reveal {
+      display: none;
+  }
+}
+
+
 /* CUSTOM END */
 
 
