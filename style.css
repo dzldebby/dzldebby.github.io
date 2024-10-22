@@ -207,7 +207,7 @@ body.header-hidden {
 }
 
 .light .footer-sfluence__logo img {
-  filter: brightness(1) !important;
+  filter: brightness(0.1) !important;
 }
 
 
@@ -247,17 +247,16 @@ p#black-text {
 }
 
 .footer-sfluence__logo {
-  filter: brightness(100);
+  filter: brightness(50);
 }
 
-img.show-light {
+/* img.show-light {
   max-width: 20%;
-}
+} */
 
-.experience__grid::before {
-  background-image: url(assets/imgs/linechart.png);
+img#resume-icon {
+  max-width: 15%;
 }
-
 
 
 @media only screen and (max-width: 767px) {
@@ -265,6 +264,18 @@ img.show-light {
     color: var(--blue-1) !important;
     mix-blend-mode: normal;
   }
+}
+
+
+
+@media only screen and (max-width: 1199px) {
+  .brand__logo_flex {
+    gap:60px;
+  }
+}
+
+.writer-award__left {
+  padding-top: 30px;
 }
 
 /* CUSTOM END */
