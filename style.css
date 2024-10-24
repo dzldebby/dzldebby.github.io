@@ -259,6 +259,7 @@ img#resume-icon {
 }
 
 
+
 @media only screen and (max-width: 767px) {
   h3.tg-sec-title.has_fade_anim, h2.tg-sec-title.has_fade_anim {
     color: var(--blue-1) !important;

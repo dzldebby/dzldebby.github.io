@@ -21,7 +21,7 @@
       height: 9em;
       width: 9em;
       border: 10px solid var(--white);
-      border-top-color: var(--primary);
+      border-top-color: var(--blue-1) !important;
       margin: 0 auto 3.5em auto;
       @media #{$sm}{
         margin: 0 auto .2em auto;
@@ -44,7 +44,7 @@
           font-size: 50px;
         }
         &:before {
-          color: var(--primary);
+          color: var(--blue-1) !important;
           content: attr(data-text);
           animation: characters 4s infinite;
           left: 0;
