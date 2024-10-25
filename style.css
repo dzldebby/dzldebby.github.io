@@ -269,6 +269,22 @@ img#resume-icon {
 
 
 
+@media only screen and (max-width: 767px) {
+  .writer-award__content p {
+    font-size: 20px !important;
+  }
+}
+
+
+@media only screen and (max-width: 767px) {
+  .footer-sfluence__top::before {
+    height: 0px;
+  }
+}
+
+
+
+
 @media only screen and (max-width: 1199px) {
   .brand__logo_flex {
     gap:60px;
