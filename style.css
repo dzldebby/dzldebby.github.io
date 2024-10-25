@@ -284,6 +284,14 @@ img#resume-icon {
 
 
 
+@media only screen and (max-width: 767px) {
+  img#mobile-dark {
+    filter: brightness(0.5)
+  }
+}
+
+
+
 
 @media only screen and (max-width: 1199px) {
   .brand__logo_flex {
