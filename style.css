@@ -315,6 +315,25 @@ img#resume-icon {
   }
 }
 
+.writer-award__content {
+  grid-gap: 15px;
+}
+
+.writer-award__content p {
+  margin-bottom: 0;
+}
+
+.writer-award__content .mt-20 {
+  margin-top: 5px; /* Reduced from 20px to 15px for desktop */
+}
+
+/* Slightly reduce spacing further on mobile */
+@media only screen and (max-width: 767px) {
+  .writer-award__content .mt-20 {
+    margin-top: 12px;
+  }
+}
+
 
 /* CUSTOM END */
 
