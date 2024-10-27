@@ -335,6 +335,18 @@ img#resume-icon {
 }
 
 
+
+.offcanvas-3__area {
+  background-color: var(--blue-1);
+}
+
+.offcanvas-3__menu ul li a {
+  color: white !important;
+  -webkit-text-fill-color: white !important;
+  background-image: linear-gradient(90deg, #fff, #fff 50%, #fff 0) !important;
+}
+
+
 /* CUSTOM END */
 
 
@@ -347,4 +359,21 @@ img#resume-icon {
 .offcanvas-area {
   opacity: 0;
   visibility: hidden;
+}
+
+@media only screen and (max-width: 767px) {
+  .portfolio-details-light .header__nav {
+    display: block !important;
+    visibility: visible !important;
+  }
+
+  .portfolio-details-light .main-menu {
+    display: block !important;
+  }
+
+  .portfolio-details-light .main-menu ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
 }
