@@ -271,10 +271,10 @@
                     </div>
 
                     <div class="project-sm-thumb">
-                      <a href="#" class="popup-image" data-image="../assets/imgs/portfolio-page/birdhouse-page/tableau_dashboard.png">
+                      <a href="../assets/imgs/portfolio-page/birdhouse-page/tableau_dashboard.png" class="popup-image">
                         <img src="../assets/imgs/portfolio-page/birdhouse-page/tableau_dashboard.png" alt="Tableau Dashboard">
                       </a>
-                      <a href="#" class="popup-image" data-image="../assets/imgs/portfolio-page/birdhouse-page/schema.jpg">
+                      <a href="../assets/imgs/portfolio-page/birdhouse-page/schema.jpg" class="popup-image">
                         <img src="../assets/imgs/portfolio-page/birdhouse-page/schema.jpg" alt="Database Schema">
                       </a>
                     </div>
@@ -320,65 +320,37 @@
 
 
 
-  <!-- All JS files -->
-  <script src="../assets/js/jquery-3.6.0.min.js"></script>
-  <script src="../assets/js/jquery.magnific-popup.min.js"></script>
+<!-- Make sure these scripts are in this order -->
+<script src="../assets/js/jquery-3.6.0.min.js"></script>
+<script src="../assets/js/jquery.magnific-popup.min.js"></script>
 
-  <script>
-  window.jQuery(document).ready(function($) {
-    console.log('Document ready');
-    jQuery('.popup-image').on('click', function(e) {
-      console.log('Image clicked');
-      e.preventDefault();
-      var imageUrl = jQuery(this).data('image');
-      
-      jQuery.magnificPopup.open({
-        items: {
-          src: imageUrl
-        },
-        type: 'image',
-        closeOnContentClick: true,
-        mainClass: 'mfp-img-mobile mfp-with-zoom',
-        image: {
-          verticalFit: true,
-          titleSrc: 'alt'
-        },
-        zoom: {
-          enabled: true,
-          duration: 300,
-          opener: function(element) {
-            return element.find('img');
-          }
-        },
-        callbacks: {
-          open: function() {
-            jQuery('body').css('overflow', 'hidden');
-            // Add mobile-specific handling
-            if (window.innerWidth < 768) {
-              jQuery('.mfp-content').css({
-                'max-width': '95%',
-                'margin': '0 auto'
-              });
-            }
-          },
-          close: function() {
-            jQuery('body').css('overflow', '');
-          }
-        },
-        // Add mobile-specific options
-        gallery: {
-          enabled: true,
-          navigateByImgClick: true,
-          preload: [0,1]
-        },
-        removalDelay: 300,
-        fixedContentPos: true,
-        fixedBgPos: true,
-        overflowY: 'auto'
-      });
-    });
+<script>
+jQuery(document).ready(function($) {
+  console.log('Document ready');
+  $('.popup-image').magnificPopup({
+    type: 'image',
+    closeOnContentClick: true,
+    mainClass: 'mfp-img-mobile mfp-with-zoom',
+    image: {
+      verticalFit: true
+    },
+    zoom: {
+      enabled: true,
+      duration: 300
+    },
+    callbacks: {
+      open: function() {
+        $('body').css('overflow', 'hidden');
+      },
+      close: function() {
+        $('body').css('overflow', '');
+      }
+    }
   });
-  </script>
+});
+</script>
+
+<!-- Then continue with your other scripts -->
 
   <script src="../assets/js/bootstrap.bundle.min.js"></script>
   <script src="../assets/js/swiper-bundle.min.js"></script>
