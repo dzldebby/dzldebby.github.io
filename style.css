@@ -377,3 +377,52 @@ img#resume-icon {
     gap: 20px;
   }
 }
+
+/* Popup styles */
+.mfp-bg {
+  opacity: 0.9;
+}
+
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+  opacity: 1;
+}
+
+.mfp-with-zoom.mfp-ready.mfp-bg {
+  opacity: 0.9;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container,
+.mfp-with-zoom.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
+.popup-image {
+  cursor: pointer;
+}
+
+/* Make sure images in popup are responsive */
+.mfp-content img {
+  max-width: 90vw;
+  max-height: 90vh;
+  margin: auto;
+}
+
+/* Make list items consistent with other text */
+.list-plus li {
+    font-size: 16px; /* or whatever base font size you're using for paragraphs */
+    line-height: 1.6;
+    font-family: inherit;
+}
+
+/* If needed, also ensure paragraphs have the same size */
+.project_overview p, 
+.project_overview li {
+    font-size: 16px;
+    line-height: 1.6;
+}
