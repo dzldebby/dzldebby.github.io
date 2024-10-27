@@ -426,3 +426,7 @@ img#resume-icon {
     font-size: 16px;
     line-height: 1.6;
 }
+
+.project-sm-thumb-single {
+  grid-template-columns: 1fr;
+}
