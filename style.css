@@ -430,3 +430,12 @@ img#resume-icon {
 .project-sm-thumb-single {
   grid-template-columns: 1fr;
 }
+
+
+.fa-brands, .fab{
+  color: var(--blue-1) !important;
+}
+
+#white-text {
+  color: white !important;
+}
