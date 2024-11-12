@@ -52,15 +52,15 @@
                 <nav class="main-menu menu-dark">
                   <ul>
                     <li><a href="index.html">home</a></li>
-                    <li><a href="about.html">about</a></li>
-                    <li><a href="blog.html" >resume</a></li>
+                    <li><a href="#about-section">about</a></li>
+                    <li><a href="#resume-section" >resume</a></li>
                     <li class="menu-item-has-children"><a href="#">Projects</a>
                       <ul class="dp-menu">
-                        <li><a href="#resume-section">Highlighted Projects</a></li>
+                        <li><a href="#highlight-section">Highlighted Projects</a></li>
                         <li><a href="portfolio.html">All Projects</a></li>
                       </ul>
                     </li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#contact">Contact</a></li>
                   </ul>
                 </nav>
               </div>
@@ -131,6 +131,9 @@
         </div>
         <div class="">
           <div class="offcanvas-3__meta mb-145 d-none d-md-block">
+
+
+
             <ul>
 
               <li><a href="mailto:debby.lingzl@gmail.com">debby.lingzl@gmail.com</a></li>
@@ -155,9 +158,9 @@
           <ul>
             <li><a href="index.html">home</a></li>
             <li><a href="#about-section">about me</a></li>
-            <li><a href="#resume-section">Highlighted Projects</a></li>
+            <li><a href="#highlight-section">Highlighted Projects</a></li>
             <li><a href="portfolio.html">All Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -207,10 +210,10 @@
 
                       <div class="writer-inab__hero-btn-wrap has_fade_anim" data-delay="0.3" data-ease="bounce">
                         <div class="writer-inab__hero-scroll-btn">
-                          <img class="rotate-text show-dark" src="../assets/imgs/writer/Scroll.png" alt="scroll-btn">
-                          <img class="rotate-text show-light" src="../assets/imgs/writer/Scroll-light.png" alt="scroll-btn">
-                          <img class="scroll-arrow show-dark" src="../assets/imgs/writer/scroll-arrow.png" alt="scroll-btn">
-                          <img class="scroll-arrow show-light" src="../assets/imgs/writer/scroll-arrow-light.png"
+                          <img class="rotate-text show-dark" src="../assets/imgs/writer/Scroll-blue.png" alt="scroll-btn">
+                          <img class="rotate-text show-light" src="../assets/imgs/writer/Scroll-blue.png" alt="scroll-btn">
+                          <img class="scroll-arrow show-dark" src="../assets/imgs/writer/scroll-arrow-blue.png" alt="scroll-btn">
+                          <img class="scroll-arrow show-light" src="../assets/imgs/writer/scroll-arrow-blue.png"
                             alt="scroll-btn">
                         </div>
                       </div>
@@ -655,7 +658,7 @@
         </main>
 
         <!-- Footer area start -->
-        <footer class="footer-sfluence__area">
+        <footer class="footer-sfluence__area" id="contact">
           <div class="container">
             <div class="row">
               <div class="col-xxl-12">
@@ -686,7 +689,7 @@
                   </div>
                 </div>
 
-                <div class="footer-sfluence__btm">
+                <div class="footer-sfluence__btm" id="about-section">
                   <p id="white-text">© All rights reserved by <a id="white-text" href="http://debbyling.github.io">Debby Ling</a> </p>
                   <a id="white-text" href="mailto:debby.lingzl@gmail.com">debby.lingzl@gmail.com</a>
                 </div>
@@ -802,7 +805,51 @@ document.addEventListener('DOMContentLoaded', function() {
 
 </script>
 
+<script>
 
+
+document.addEventListener('DOMContentLoaded', function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const shouldScroll = urlParams.get('scroll');
+    const hash = window.location.hash;
+    
+    if (shouldScroll && hash) {
+        const element = document.querySelector(hash);
+        if (element) {
+            setTimeout(function() {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }, 100);
+        }
+    }
+});
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Get the section parameter from URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const section = urlParams.get('section');
+    
+    if (section) {
+        // Wait for everything to load
+        setTimeout(() => {
+            const element = document.getElementById(section);
+            if (element) {
+                // Reset any scroll locks
+                document.documentElement.style.overflow = '';
+                document.body.style.overflow = '';
+                
+                // Scroll to element
+                window.scrollTo({
+                    top: element.offsetTop - 100, // Adjust 100 based on your header height
+                    behavior: 'smooth'
+                });
+            }
+        }, 500); // Increased delay to ensure page is fully loaded
+    }
+});
+
+</script>
 
 </body>
 

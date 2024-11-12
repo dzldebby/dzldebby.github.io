@@ -439,3 +439,8 @@ img#resume-icon {
 #white-text {
   color: white !important;
 }
+
+.pdesigner-portfolio__area {
+  background: linear-gradient(180deg, #E2EEFE 0%, #E0EDFF 0.01%, rgba(226, 238, 254, 0) 100%);
+  background-color: var(--white);
+}
