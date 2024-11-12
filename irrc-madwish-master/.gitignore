@@ -1,5 +1,0 @@
-dist
-node_modules
-.envrc
-default.nix
-backend/public
